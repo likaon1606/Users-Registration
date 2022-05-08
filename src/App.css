@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+/* font-family: 'Spartan', sans-serif; regular 400*/
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap');
+/* font-family: 'Spartan', sans-serif; semibold 600*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    background-image: url('./images/almacen.jpg');
+    background-repeat: no-repeat;
+    background-size: 135%;
+}
+
+
+/*---------------------Button--------------------*/
+.toolbar{
+    align-items: center;
+    background-color:#FCF7FF;
+    border: 1 px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 50px;
+}
+
+caption{
+    font-size: 300%;
+    font-weight: 900;
+}
+.register{
+    background: linear-gradient(180deg, blue 0%, black 100%);
+    transition: all .3s;
+    color: yellow;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    align-items: flex-start;
+}
+.cancel{
+    background: linear-gradient(180deg, blue 0%, black 100%);
+    transition: all .3s;
+    color: red;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    /* margin-top:-1%;
+    margin-left: 70%;
+    margin-right: 10%; */
+}
+.form-container button:hover{
+    background: linear-gradient(180deg, black 0%, #ff9900 100%);
+    transition: all .3s;
+}
+
+.btnplus{
+    border: none;
+    border-radius: 5px;
+    background-color: #0088FF;
+    color: white;
+    height: 30px;
+    width: 70px;
+    transition: all 350ms;
+}
+
+.btnplus:hover{
+    background-color:#006CFF;
+}
+
+/*---------------------UserForm--------------------*/
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+form{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: green;
+    opacity: .7;
+    box-shadow: 2px 4px 6px 7px rgb(0,0,0,.5);
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+input[type='text'],input[type='submit']{
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 40px;
+    /* padding: 10px; */
+    /* margin-top: 20px; */
+    width: 300px;
+}
+
+
+/*---------------------UserList--------------------*/
+
+.user-table{
+    display: flex;
+    justify-content: center;
+}
+
+
+.table-afg{ 
+    text-align: center;
+    padding: 20px;
+    background-color: green;
+    opacity: .8;
+    border-radius: 10px;
+    width: 95%;
+    text-align: center;
+    box-shadow: 2px 4px 6px 7px rgb(0,0,0,.5);
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.table-title{
+    color: yellow;
+    text-shadow: 5px 5px 5px black;
+}
+
+.head-title{
+    padding: 5px;
+    text-align: start;
+    line-height: 30px;
+    background-color: #240000;
+    /* background-image: url('./images/cielo.jpg');
+    background-repeat: no-repeat;
+    background-size:cover; */
+    color: #FCF7FF;
+    border-radius: 10px;
+ 
+}
+
+th{
+    border-bottom: 1px solid #6A4A2D;
+    font-size: 7px;
+}
+
+td{
+    border-bottom: 1px solid #DFEEF0;
+    /* background-color: #D6EAF8; */
+    text-align: start;
+    padding: 3px;
+    height: 35px;
+    font-size: 7px;
+    color: #FCF7FF;
+    margin-bottom: 10px;
+}
+
+.circle{
+    border-radius: 50px;
+}
+
+.options-user{
+    display: flex;
+    border-bottom: 1px solid #DFEEF0;
+    /* background-color: transparent; */
+    border-bottom: none;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+
+.options-user button i{
+    font-size: 10px;
+  
+}
+
+.btn-edit{
+    background-color: #39E417;
+    border: none;
+    color: white;
+    height: 22px;
+    width: 22px;
+    transition: all 350ms;
+    margin-left: 10px;
+}
+
+.btn-delete{
+    background-color: #E44617;
+    border: none;
+    color: white;
+    height: 22px;
+    width: 22px;
+    transition: all 350ms;
+    margin-left: 10px;
+}
+
+.btn-edit:hover{
+    background-color: #005A00;
+}
+.btn-delete:hover{
+    background-color: #C22400;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #240000;
+    margin-top: 10px;
+    width: 100%;
+    height: 120px;
+   
+}
+
+footer p{
+    padding: 15px;
+    line-height: 0;
+    text-align: center;
+    color: #D37B0F;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+
+
+/*------------------RESPONSIVE-768------------------*/
+
+@media screen and (max-width: 768px){
+    body{
+        background-size: cover;
+    }
+    .table-afg{ 
+        margin-left: 20px;
+    }
+    .table-title{
+        font-size: 30px;
+        margin-top: -45px;
+    }
+    
+}
